@@ -1,0 +1,15 @@
+{
+  "appclips": {
+    "apps": ["4PUQB9RND3.com.hesseldieck.OddOne.Clip"]
+  },
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["4PUQB9RND3.com.hesseldieck.OddOne"],
+        "components": [
+          { "/": "/odd-one/play*" }
+        ]
+      }
+    ]
+  }
+}
