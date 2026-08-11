@@ -17,6 +17,15 @@ header { margin-bottom: 2rem; }
 .brand { font-weight: 700; letter-spacing: .02em; text-decoration: none; color: inherit; font-size: .95rem; }
 .dl { display: inline-block; background: #3d6fd6; color: #fff; padding: .6rem 1.2rem;
   border-radius: 10px; text-decoration: none; font-weight: 600; margin: .6rem 0; }
+img.gif { max-width: 280px; width: 100%; border-radius: 14px; border: 1px solid rgba(128,128,128,.25); }
+.media { display: flex; flex-wrap: wrap; gap: 1.2rem; align-items: flex-start; margin: 1rem 0 .4rem; }
+.shots { display: flex; gap: .7rem; overflow-x: auto; padding: .2rem 0 .9rem; -webkit-overflow-scrolling: touch; }
+.shots a { flex: 0 0 auto; text-decoration: none; }
+.shots img { height: 360px; width: auto; display: block; border-radius: 12px;
+  border: 1px solid rgba(128,128,128,.25); }
+.shots figcaption { font-size: .78rem; opacity: .65; text-align: center; padding-top: .35rem; color: #1c1c1e; }
+@media (prefers-color-scheme: dark) { .shots figcaption { color: #ececec; } }
+.cap { font-size: .84rem; opacity: .7; margin-top: -.2rem; }
 footer { margin-top: 3.5rem; font-size: .85rem; opacity: .7; }
 table { border-collapse: collapse; }
 td, th { padding: .25rem .8rem .25rem 0; text-align: left; vertical-align: top; }
@@ -24,12 +33,36 @@ blockquote { margin: 0 0 1rem; padding-left: 1rem; border-left: 3px solid #3d6fd
 </style>
 </head>
 <body>
-<header><a class="brand" href="/">earls studio</a> · <a href="/press/">Odd One press kit</a></header>
+<header><a class="brand" href="/">earls studio</a> · <a href="/press/">Odd One press kit</a> · <a href="/press/blinkgrid/">Blink Grid press kit</a></header>
 <h1>ECHO - Press Kit</h1>
-<p><a class="dl" href="../echo-press-assets.zip">Download assets (screenshots EN + DE, logo - ZIP, 20 MB)</a></p>
+<p><strong>Out now on the App Store — current version 1.0.1.</strong></p>
+<div class="media">
+  <figure style="margin:0">
+    <img class="gif" src="../echo-gameplay.gif" alt="ECHO gameplay: a run becomes an echo that replays it">
+    <figcaption class="cap">The core mechanic: your run becomes an echo (animated GIF)</figcaption>
+  </figure>
+</div>
+<p><a class="dl" href="../echo-press-assets.zip">Download assets (screenshots EN + DE, GIF, logo - ZIP, 21 MB)</a></p>
 <p>App Store: <a href="https://apps.apple.com/app/id6791749935">apps.apple.com/app/id6791749935</a><br>
 Press contact: Lucas Hesseldieck - <a href="mailto:echo@earlsstudio.com">echo@earlsstudio.com</a><br>
-Gameplay video: coming shortly - available on request.</p>
+Gameplay video: full App Preview (25 s, EN + DE, 886&times;1920) available on request.</p>
+
+<h2>Screenshots</h2>
+<p class="cap">Click for full resolution. Free to use in coverage of the game, credit "earls studio".</p>
+<div class="shots">
+  <a href="../img/echo/01-01-menu.jpg"><figure style="margin:0"><img src="../img/echo/01-01-menu.jpg" alt="ECHO main menu"><figcaption>Main menu</figcaption></figure></a>
+  <a href="../img/echo/02-02-endspiel.jpg"><figure style="margin:0"><img src="../img/echo/02-02-endspiel.jpg" alt="ECHO late-game level"><figcaption>Late-game level</figcaption></figure></a>
+  <a href="../img/echo/03-03-spiegel.jpg"><figure style="margin:0"><img src="../img/echo/03-03-spiegel.jpg" alt="ECHO mirror echo mechanic"><figcaption>Mirror echoes</figcaption></figure></a>
+  <a href="../img/echo/04-04-auswahl.jpg"><figure style="margin:0"><img src="../img/echo/04-04-auswahl.jpg" alt="ECHO level select"><figcaption>Level select</figcaption></figure></a>
+  <a href="../img/echo/05-05-tagesraetsel.jpg"><figure style="margin:0"><img src="../img/echo/05-05-tagesraetsel.jpg" alt="ECHO daily puzzle"><figcaption>Daily puzzle</figcaption></figure></a>
+  <a href="../img/echo/06-06-hell.jpg"><figure style="margin:0"><img src="../img/echo/06-06-hell.jpg" alt="ECHO light mode"><figcaption>Light mode</figcaption></figure></a>
+</div>
+
+<h2>Press coverage</h2>
+<ul>
+<li>appgefahren.de, 11 August 2026, Fabian — <a href="https://www.appgefahren.de/echo-tolles-puzzle-spiel-aus-deutscher-entwicklung-403669.html">„Echo: Tolles Puzzle-Spiel aus deutscher Entwicklung"</a></li>
+<li>iTopnews.de, 11 August 2026, Lukas Hermann — <a href="https://www.itopnews.de/2026/08/echo-neues-raetselspiel-fuer-ios-ueberzeugt-mit-innovativem-gameplay/">„ECHO: Neues Rätselspiel für iOS überzeugt mit innovativem Gameplay"</a></li>
+</ul>
 <hr>
 
 <h1>ECHO — Press Kit (English)</h1>
@@ -72,10 +105,11 @@ Odd One (July 2026).</p>
 <h2>Factsheet</h2>
 <table>
 <tr><td><strong>Name</strong></td><td>ECHO – Time Loop Puzzle (German store: „ECHO – Zeitschleifen-Rätsel")</td></tr>
-<tr><td><strong>Tagline</strong></td><td>Cooperate with your past self</td></tr>
+<tr><td><strong>Tagline</strong></td><td>Cooperate with your past self (German App Store subtitle: „Dein altes Ich spielt mit")</td></tr>
 <tr><td><strong>Developer</strong></td><td>earls studio (Lucas Hesseldieck), Munich, Germany</td></tr>
 <tr><td><strong>Platform</strong></td><td>iPhone, iOS 17 or later</td></tr>
-<tr><td><strong>Release</strong></td><td>Summer 2026 (submitted to App Review; exact date follows)</td></tr>
+<tr><td><strong>Release</strong></td><td>August 2026 — out now worldwide. Current version 1.0.1 (7 August 2026)</td></tr>
+<tr><td><strong>Size</strong></td><td>3 MB</td></tr>
 <tr><td><strong>Price</strong></td><td>Free — no ads, no tracking, no account; optional tip jar that unlocks nothing</td></tr>
 <tr><td><strong>Modes</strong></td><td>Campaign (100 levels, 10 decades), Zen (endless, procedural), Daily puzzle (identical worldwide, streaks, widget), Time Challenge (3 minutes)</td></tr>
 <tr><td><strong>Mechanics</strong></td><td>Echo runs of your past self, pressure plates &amp; doors, dashed doors, double doors, crumbling floors, paradox levels, beat walls</td></tr>
@@ -89,9 +123,10 @@ Odd One (July 2026).</p>
 
 <h2>About earls studio (boilerplate)</h2>
 <blockquote><p>earls studio is a one-person game studio from Munich, founded in 2026 by
-Lucas Hesseldieck. It makes small, calm, carefully finished games — free of
-ads and tracking. Odd One (July 2026) was its first release; ECHO is its
-second.</p></blockquote>
+Lucas Hesseldieck. It makes small, calm, carefully finished games. Odd One
+(July 2026) and ECHO (August 2026) are free of ads and tracking and financed
+by optional tips; the third game, Blink Grid (August 2026), is free-to-play
+with non-personalised ads and optional purchases.</p></blockquote>
 <hr>
 
 <h1>ECHO — Presskit (Deutsch)</h1>
@@ -136,10 +171,11 @@ Ein-Personen-Studio aus München hinter dem Rätselspiel Odd One (Juli 2026).</p
 <h2>Factsheet</h2>
 <table>
 <tr><td><strong>Name</strong></td><td>ECHO – Zeitschleifen-Rätsel (englischer Store: "ECHO – Time Loop Puzzle")</td></tr>
-<tr><td><strong>Tagline</strong></td><td>Kooperiere mit deinem vergangenen Ich</td></tr>
+<tr><td><strong>Tagline</strong></td><td>Kooperiere mit deinem vergangenen Ich (Store-Untertitel: „Dein altes Ich spielt mit")</td></tr>
 <tr><td><strong>Entwickler</strong></td><td>earls studio (Lucas Hesseldieck), München</td></tr>
 <tr><td><strong>Plattform</strong></td><td>iPhone, ab iOS 17</td></tr>
-<tr><td><strong>Release</strong></td><td>Sommer 2026 (bei App Review eingereicht; genaues Datum folgt)</td></tr>
+<tr><td><strong>Release</strong></td><td>August 2026 — weltweit erhältlich. Aktuelle Version 1.0.1 (7. August 2026)</td></tr>
+<tr><td><strong>Größe</strong></td><td>3 MB</td></tr>
 <tr><td><strong>Preis</strong></td><td>Kostenlos — keine Werbung, kein Tracking, kein Konto; freiwilliges Trinkgeld, das nichts freischaltet</td></tr>
 <tr><td><strong>Modi</strong></td><td>Kampagne (100 Level, 10 Dekaden), Zen (endlos, prozedural), Tagesrätsel (weltweit identisch, Serien, Widget), Zeit-Challenge (3 Minuten)</td></tr>
 <tr><td><strong>Mechaniken</strong></td><td>Echo-Läufe des vergangenen Ichs, Druckplatten &amp; Türen, gestrichelte Türen, Doppel-Türen, Rissböden, Paradox-Level, Takt-Wände</td></tr>
@@ -154,8 +190,10 @@ Ein-Personen-Studio aus München hinter dem Rätselspiel Odd One (Juli 2026).</p
 <h2>Über earls studio (Boilerplate)</h2>
 <blockquote><p>earls studio ist ein Ein-Personen-Spielestudio aus München, gegründet 2026
 von Lucas Hesseldieck. Es macht kleine, ruhige, sorgfältig fertiggestellte
-Spiele — ohne Werbung und ohne Tracking. Odd One (Juli 2026) war die erste
-Veröffentlichung; ECHO ist die zweite.</p></blockquote>
+Spiele. Odd One (Juli 2026) und ECHO (August 2026) sind frei von Werbung und
+Tracking und über freiwillige Trinkgelder finanziert; das dritte Spiel,
+Blink Grid (August 2026), ist Free-to-play mit nicht-personalisierter
+Werbung und optionalen Käufen.</p></blockquote>
 
 <footer>&copy; 2026 earls studio &middot; <a href="/impressum">Impressum</a></footer>
 </body>
