@@ -1,32 +1,65 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Odd One — Ein Rätsel, sofort spielbar</title>
-<meta name="description" content="Finde das Symbol, das die versteckte Regel bricht. Ein Rätsel aus Odd One, dem ruhigen Logik-Puzzle von earls studio.">
+<title>Odd One - One puzzle, instantly playable</title>
+<meta name="description" content="Find the symbol that breaks the hidden rule. A puzzle from Odd One, the calm logic game by earls studio.">
+<meta name="apple-itunes-app" content="app-id=6788079535, app-clip-bundle-id=com.hesseldieck.OddOne.Clip">
 <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
 <main>
   <h1>Odd One</h1>
-  <p class="tagline">Findest du den Ausreißer?</p>
 
-  <p>Auf einem iPhone öffnet dieser Link das Rätsel direkt im Spiel —
-     ohne Installation. Auf allen anderen Geräten geht es hier weiter:</p>
+  <div id="lang-en">
+    <p class="tagline">Can you spot the odd one?</p>
 
-  <p><a href="https://apps.apple.com/app/id6788079535">Odd One im App Store</a></p>
+    <p>On an iPhone, this link opens the puzzle right away - no install
+       needed. On any other device, continue here:</p>
 
-  <h2>Worum geht es?</h2>
-  <p>Ein Raster aus Symbolen. Eines bricht die versteckte Regel — Farbe, Form,
-     Größe, Anzahl oder Muster. Tipp genau das an. Mehr musst du nicht wissen.</p>
-  <p class="muted">300 Level, ein tägliches Rätsel für alle weltweit, ein
-     spielbares Widget. Kostenlos, ohne Werbung, ohne Tracking, ohne Konto.</p>
+    <p><a href="https://apps.apple.com/app/id6788079535">Odd One on the App Store</a></p>
+
+    <h2>What is this?</h2>
+    <p>A grid of symbols. One breaks the hidden rule - colour, shape, size,
+       count or pattern. Tap exactly that one. That is all you need to know.</p>
+    <p class="muted">300 levels, one daily puzzle shared worldwide, a playable
+       widget. Free, no ads, no tracking, no account.</p>
+  </div>
+
+  <div id="lang-de" hidden>
+    <p class="tagline">Findest du den Ausreißer?</p>
+
+    <p>Auf einem iPhone öffnet dieser Link das Rätsel direkt - ohne
+       Installation. Auf allen anderen Geräten geht es hier weiter:</p>
+
+    <p><a href="https://apps.apple.com/app/id6788079535">Odd One im App Store</a></p>
+
+    <h2>Worum geht es?</h2>
+    <p>Ein Raster aus Symbolen. Eines bricht die versteckte Regel - Farbe,
+       Form, Größe, Anzahl oder Muster. Tipp genau das an. Mehr musst du
+       nicht wissen.</p>
+    <p class="muted">300 Level, ein tägliches Rätsel für alle weltweit, ein
+       spielbares Widget. Kostenlos, ohne Werbung, ohne Tracking, ohne Konto.</p>
+  </div>
 </main>
 <footer>
-  © 2026 earls studio · <a href="../../">Startseite</a> ·
+  © 2026 earls studio · <a href="../../">Home</a> ·
   <a href="../">Support</a> · <a href="../../impressum/">Impressum</a> ·
-  <a href="../datenschutz/">Datenschutz</a>
+  <a href="../privacy/" id="privacy-link">Privacy</a>
 </footer>
+<script>
+  // English by default; German when the browser prefers it. No cookies,
+  // no storage - the choice is derived fresh from the browser each visit.
+  if ((navigator.language || "").toLowerCase().startsWith("de")) {
+    document.documentElement.lang = "de";
+    document.title = "Odd One - Ein Rätsel, sofort spielbar";
+    document.getElementById("lang-en").hidden = true;
+    document.getElementById("lang-de").hidden = false;
+    var p = document.getElementById("privacy-link");
+    p.href = "../datenschutz/";
+    p.textContent = "Datenschutz";
+  }
+</script>
 </body>
 </html>
